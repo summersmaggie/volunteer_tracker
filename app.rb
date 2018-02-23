@@ -29,11 +29,16 @@ get('/projects/:id') do
   erb(:project)
 end
 
-post('/volunteers') do
+post('/project/volunteers') do
   name = params.fetch("name")
   project_id = params.fetch("project_id").to_i()
   @project = Project.find(project_id)
   @volunteer = Volunteer.new({:name => name, :project_id => project_id})
   @volunteer.save()
   erb(:project)
+end
+
+get('/volunteers/:id') do
+  @volunteer = Volunteer.find(params.fetch("id").to_i())
+  erb(:volunteer)
 end
