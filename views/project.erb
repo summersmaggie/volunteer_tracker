@@ -1,22 +1,20 @@
-<h2><em><%= @project.title() %> Details</em></h2>
+<h2><em><%= @project.title() %> Project Details</em></h2>
 
 <% if @project.volunteers().any?() %>
   <h3>Here are all the volunteers for this project:</h3>
 
-  <ul>
     <% @project.volunteers().each() do |volunteer| %>
-      <li><a href="/volunteers/<%= volunteer.id()%>"><%= volunteer.name() %></a></li>
+      <h4><a href="/volunteers/<%= volunteer.id()%>"><%= volunteer.name() %></a><h4>
     <% end %>
-  </ul>
 
-  <% else %>
-    <p>There are no volunteers for this project yet!</p>
-  <% end %>
+<% else %>
+    <h4>There are no volunteers for this project yet!</h4>
+<% end %>
 
-  <br>
-  <br>
+<br>
+<br>
 
-<h3>Add a volunteer to <%= @project.title() %> </h3>
+<h3>Add a volunteer to <%= @project.title() %> project: </h3>
 
 <form action="/project/volunteers" method="post">
   <input id="project_id" name="project_id" type="hidden" value="<%= @project.id() %>">
@@ -24,8 +22,10 @@
   <label for ="name">Name of Volunteer:</label>
   <input id="name" name="name" type="text">
 
-  <button type="submit" class="button btn-success">Add volunteer</button>
+  <button type="submit" class="btn btn-success">Add volunteer</button>
 </form>
+
+<br>
 
 <p><a href="/projects/<%= @project.id() %>/edit">Edit Project</a></p>
 <p><a href="/">Return Home</a></p>
