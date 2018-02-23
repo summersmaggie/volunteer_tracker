@@ -9,5 +9,17 @@
 <br>
 <br>
 
-<p><a href="/volunteers/<%= @volunteer.id() %>/edit">Edit Volunteer</a></p>
+
+<br>
+<br>
+<form action="/volunteers/<%= @volunteer.id() %>" method="post">
+  <input name="_method" type="hidden" value="patch">
+
+  <label for="name">Update volunteer name:</label>
+  <input id="name" name="name" type="text">
+
+  <button type="submit">Update Volunteer</button>
+</form>
+
+<br>
 <p><a href="/">Return Home</a></p>
