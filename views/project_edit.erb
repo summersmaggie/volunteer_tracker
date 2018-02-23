@@ -8,3 +8,8 @@
 
   <button type="submit">Update Project</button>
 </form>
+
+<form action="/projects/<%= @project.id()%>" method="post">
+  <input name="_method" type="hidden" value="delete">
+
+  <button type="submit">Delete Project</button>
