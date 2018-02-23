@@ -26,4 +26,25 @@ class Project
     projects
   end
 
+  def self.find(id)
+    found_project = nil
+    Project.all().each() do |project|
+      if project.id().==(id)
+        found_project = project
+      end
+    end
+    found_project
+  end
+
+  def volunteers
+    project_volunteers = []
+    volunteers = DB.exec("SELECT * FROM volunteers WHERE project_id = #{self.id()};")
+    volunteers.each() do |volunteer|
+      name = volunteer.fetch("name")
+      project_id = volunteer.fetch("project_id").to_i()
+      id = volunteer.fetch("id").to_i()
+      project_volunteers.push(Volunteer.new(:name => name, :project_id => project_id, :id => id))
+    end
+    project_volunteers
+  end
 end
