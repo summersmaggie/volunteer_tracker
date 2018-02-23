@@ -1,6 +1,6 @@
 # Volunteer Tracker
 
-#### A Volunteer Tracker App created with PostgreSQL, Sinatra, and Ruby. 02/23/2018
+#### A Volunteer Tracker App created with Postgres, Sinatra, and Ruby. 02/23/2018
 
 #### By **Maggie Summers**
 
@@ -8,7 +8,8 @@
 
 A Sinatra application that allows non-profit employees to enter new projects and new volunteers, as well as add volunteers to projects.
 
-#### Behavior
+## Behavior
+
 1. Add new projects to database.
 2. Add new volunteers to database.
 3. Add volunteers to projects.
@@ -17,8 +18,9 @@ A Sinatra application that allows non-profit employees to enter new projects and
 
 ## Setup/Installation Requirements
 
-* View and use the project here: 
 * Clone this repository and open in text editor.
+* Set up a local database with two tables called volunteers and projects.
+* Host on a local server.
 
 ## Support and contact details
 
@@ -26,7 +28,10 @@ If you have any questions or concerns, please submit a pull request or contact m
 
 ## Technologies Used
 
-* Sinatra, Ruby, PostgreSQL
+* Sinatra
+* Postgres
+* Ruby
+* Ruby Gems, including RSpec, Pry, PG
 
 ### License
 

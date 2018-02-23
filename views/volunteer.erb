@@ -18,7 +18,14 @@
   <label for="name">Update volunteer name:</label>
   <input id="name" name="name" type="text">
 
-  <button type="submit">Update Volunteer</button>
+  <button type="submit" class="button btn-success"=>Update Volunteer</button>
+</form>
+
+<br>
+<form action="/volunteers/<%= @volunteer.id() %>" method="post">
+  <input name="_method" type="hidden" value="delete">
+
+  <button type="submit" class="button btn-warning">Delete Volunteer</button>
 </form>
 
 <br>
