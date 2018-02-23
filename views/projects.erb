@@ -1,14 +1,12 @@
 <% if @projects.any?() %>
   <h3>Here are your projects:</h3>
 
-  <ul>
     <% @projects.each() do |project| %>
-      <li><a href="/projects/<%= project.id()%>"><%= project.title() %></a> </li>
+      <h4><a href="/projects/<%= project.id()%>"><%= project.title() %></a></h4>
     <% end %>
-  </ul>
 
 <% else %>
 
-    <p>There are no projects yet!</p>
+    <h4>There are no projects yet!</h4>
 
 <% end %>

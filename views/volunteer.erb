@@ -3,5 +3,11 @@
 <h3>Volunteer Name:</h3>
 <h4><%= @volunteer.name() %></h4>
 
-<h3>Project Id Working On:</h3>
+<h3>Project Job Number Currently Working On:</h3>
 <h4><%= @volunteer.project_id() %></h4>
+
+<br>
+<br>
+
+<p><a href="/volunteers/<%= @volunteer.id() %>/edit">Edit <%= @volunteer.name() %> volunteer</a></p>
+<p><a href="/">Return Home</a></p>
