@@ -6,21 +6,19 @@
 
 ## Description
 
-A Sinatra application to add animals and customers in an animal shelter app, as well as show lists of animals to be adopted based on various factors.
+A Sinatra application that allows non-profit employees to enter new projects and new volunteers, as well as add volunteers to projects.
 
 #### Behavior
-1. Add animals to system.
-2. Add customers to system.
-3. List by breed.
-4. List by type.
-5. List by name.
-6. List chronologically.
-7. List of customers based on breed preferences.
-8. Add owner to animal if person adopts.
+1. Add new projects to database.
+2. Add new volunteers to database.
+3. Add volunteers to projects.
+4. Update and delete projects as needed.
+5. Update and delete volunteers as needed.
 
 ## Setup/Installation Requirements
 
-* Clone this repository
+* View and use the project here: 
+* Clone this repository and open in text editor.
 
 ## Support and contact details
 
