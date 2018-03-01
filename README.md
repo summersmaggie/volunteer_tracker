@@ -1,38 +1,66 @@
 # Volunteer Tracker
 
-#### A Volunteer Tracker App created with Postgres, Sinatra, and Ruby. 02/23/2018
+#### _By Maggie Summers_
 
-#### By **Maggie Summers**
+#### _A Sinatra application that allows non-profit employees to enter new projects and new volunteers, as well as add volunteers to projects. 2-27-18_
 
 ## Description
 
-A Sinatra application that allows non-profit employees to enter new projects and new volunteers, as well as add volunteers to projects.
+_This app allows a user to add, update and delete volunteers and projects to a database. They can then assign projects to volunteers, and volunteers to projects._
 
-## Behavior
+### Specifications
+    1. Add project to database
+      * _Example input - "Call volunteer list"_
+      * _Example output - "Projects: Call volunteer list_
 
-1. Add new projects to database.
-2. Add new volunteers to database.
-3. Add volunteers to projects.
-4. Update and delete projects as needed.
-5. Update and delete volunteers as needed.
+    2. Add volunteer to project
+      * _Example input - "Name of Volunteer: Maggie"_
+      * _Example output - "Here are all the volunteers for this project: Maggie"_
+
+    3. Find info about volunteer     
+      * _Example action - click "Maggie"_
+      * _Example output - "Volunteer Name: Maggie, Project Job Number Currently Assigned To: 160"_
+
+    4. Allows user to update volunteer
+      * _Example input - "Name of Volunteer: Maggie"_
+      * _Example output - "Name of Volunteer: Nicole"_
+
+    5. Allows user to update project
+      * _Example input - "Project: Call friends"_
+      * _Example output - "Project: Call parents"_
+
+## Install the DATABASE instructions
+
+* _Enter into the terminal:_ ``` $postgres```
+
+* _In the following line enter:_ ```$db:create```
+
+* _In the following line enter:_ ```$db:migrate```
+
 
 ## Setup/Installation Requirements
 
-* Clone this repository and open in text editor.
-* Set up a local database with two tables called volunteers and projects.
-* Host on a local server.
+  * _Enter in the terminal:_ ``` $ruby app.rb```
+
+  * _Using a web browser, type in the url_ ``` localhost:4567 ```
+
+## Known Bugs
+
+  * _No known bugs at this time._
 
 ## Support and contact details
 
-If you have any questions or concerns, please submit a pull request or contact me.
+  _To suggest changes, submit a pull request in the GitHub repository._
 
 ## Technologies Used
 
-* Sinatra
-* Postgres
-* Ruby
-* Ruby Gems, including RSpec, Pry, PG
+  * Ruby
+  * Sinatra
+  * pSQL
+  * ActiveRecord
 
 ### License
 
-Copyright (c) 2018  **Maggie Summers**
+  *MIT License*
+
+Copyright (c) 2018 **_Maggie Summers**
